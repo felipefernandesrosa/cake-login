@@ -1,8 +1,33 @@
 <h1>Editar Usuário</h1>
-<?php
-    echo $this->Form->create('User', array('url'   => array( 'action' => 'edit')) );
-    echo $this->Form->input('name');
-    echo $this->Form->input('username');
-    echo $this->Form->input('email');
-    echo $this->Form->input('id', array('type' => 'hidden'));
-    echo $this->Form->end('Atualizar usuário');
+<div class="col-xs-6">
+	<div class="row">
+	<?php
+		echo $this->Form->create('User', array('url'   => array( 'action' => 'edit'), array('class' => 'form-horizontal')) );
+		
+		echo '<div class="form-group">';
+			echo $this->Form->input('name', array('class' => 'form-control'));
+		echo '</div>';
+		
+		echo '<div class="form-group">';
+			echo $this->Form->input('username', array('class' => 'form-control'));
+		echo '</div>';
+		
+		echo '<div class="form-group">';
+			echo $this->Form->input('email', array('class' => 'form-control'));
+		echo '</div>';
+		
+		echo $this->Form->input('id', array('type' => 'hidden'));
+
+		$options = array(
+			'label' => 'Atualizar usuário',
+			'div' => array(
+				'class' => 'glass-pill',
+			)
+		);
+		
+		echo '<input type="submit" value="Atualizar usuário" class="btn btn-primary" >';
+		
+		echo $this->Form->end();
+	?>
+	</div>
+</div>

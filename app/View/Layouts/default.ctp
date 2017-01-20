@@ -52,8 +52,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 						<h5>
 							<?php
 								if(isset($user_session)){
-									echo 'Bem Vindo, '.$user_session['name']. '<br />';
-									echo $this->Html->link('Logout', array('action' => 'logout'));
+									echo '<p>Bem Vindo, '.$user_session['name']. '<p>';
+									echo $this->Html->link('Logout', array('action' => 'logout'), array('class' => 'btn btn-warning'));
 								}else{
 									echo 'Efetue seu '.$this->Html->link('login', array('controller' => 'users', 'action' => 'login'));
 								}

@@ -22,7 +22,8 @@
 		<td><?php echo $this->Form->postLink(
             'Delete',
             array('action' => 'delete', $user['User']['id']),
-            array('confirm' => 'Tem certeza que deseja deletar o usuário'.$user['User']['name'].'?'));
+            array('confirm' => 'Tem certeza que deseja deletar o usuário '.$user['User']['name'].'?', 'class' => 'btn btn-danger')
+			);
         ?></td>
     </tr>
     <?php endforeach; ?>
