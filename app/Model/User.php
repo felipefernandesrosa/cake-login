@@ -9,7 +9,11 @@ class User extends AppModel {
             'required' => array(
                 'rule' => array('notBlank'),
                 'message' => 'Username é requirido'
-            )
+            ),
+			'unique' => array(
+				'rule'    => 'isUnique',
+				'message' => 'Esse username já existe, escolha outro por favor.'
+			)
         ),
         'password' => array(
             'required' => array(
