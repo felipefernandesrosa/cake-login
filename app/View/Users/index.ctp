@@ -4,13 +4,13 @@
 <?php
 
 if(isset($user_session)){
-	echo 'Bem Vindo, '.$user_session['name'];
+	echo '<h5 style="float:right;"> Bem Vindo, '.$user_session['name']. '</h5>';
 }else{
-	echo 'Efetue seu '.$this->Html->link('login', array('controller' => 'users', 'action' => 'login'));
+	echo '<h5 style="float:right;"> Efetue seu '.$this->Html->link('login', array('controller' => 'users', 'action' => 'login')).'</h5>';
 }
 
 ?>
-<h3 style="float:right;"><?php echo $this->Html->link('Logout', array('action' => 'logout')); ?></h3>
+<h3 style="float:right; clear: both;"><?php echo $this->Html->link('Logout', array('action' => 'logout')); ?></h3>
 
 <table>
     <tr>
