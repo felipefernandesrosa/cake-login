@@ -2,7 +2,7 @@
 <div class="users form">
 <?php echo $this->Form->create('User');?>
     <fieldset>
-        <legend><?php echo __('Add User'); ?></legend>
+        <legend><?php echo __('Adicionar Usuário'); ?></legend>
         <?php
 		echo $this->Form->input('name', array('label' => 'Nome'));
 		echo $this->Form->input('email');
