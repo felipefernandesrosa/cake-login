@@ -63,6 +63,7 @@ if (!defined('APP_DIR')) {
  * Change at your own risk.
  *
  */
+
 if (!defined('WEBROOT_DIR')) {
 	define('WEBROOT_DIR', basename(dirname(__FILE__)));
 }
