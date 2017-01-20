@@ -1,0 +1,26 @@
+{
+  "name": "cakelogin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bower": "^1.3.12"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-clean-css": "^2.0.3",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "imagemin-pngquant": "^4.2.2",
+    "run-sequence": "^1.2.2"
+  },
+  "author": "Felipe Fernandes",
+  "license": "ISC"
+}

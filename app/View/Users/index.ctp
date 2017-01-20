@@ -1,18 +1,6 @@
-<h1>Usuários</h1>
-<?php echo $this->Html->link('Adicionar novo usuário', array('action' => 'add')); ?>
+<h1 class="text-muted">Usuários</h1>
 
-<?php
-
-if(isset($user_session)){
-	echo '<h5 style="float:right;"> Bem Vindo, '.$user_session['name']. '</h5>';
-}else{
-	echo '<h5 style="float:right;"> Efetue seu '.$this->Html->link('login', array('controller' => 'users', 'action' => 'login')).'</h5>';
-}
-
-?>
-<h3 style="float:right; clear: both;"><?php echo $this->Html->link('Logout', array('action' => 'logout')); ?></h3>
-
-<table>
+<table class="table table-striped">
     <tr>
         <th>Id</th>
         <th>Nome</th>
